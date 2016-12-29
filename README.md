@@ -1,6 +1,5 @@
 # WaveSideBar
 WavaSideBar——一个自带中英文对应排序的字母导航栏
-这是一个自带节假日和滑动的日历控件，欢迎各位拍砖
 ##效果图<br>
 ![](https://github.com/nanchen2251/WaveSideBar/blob/master/GIF1.gif)
 

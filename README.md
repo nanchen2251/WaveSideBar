@@ -49,6 +49,11 @@ WavaSideBar——一个自带中英文对应排序的字母导航栏
         }
     });
 ```
+####4、自动匹配中英文<br>
+```java
+FirstLetterUtil.getFirstLetter(name);
+```
+具体请下载查看示例代码
 ##属性一览
 |      Attributes     |   Format |    Default   |           Description          |
 | ------------------- |  ------: | :---------:  | :-----------                   |

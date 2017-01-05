@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WaveSideBar/WaveSideBar.iml" filepath="$PROJECT_DIR$/WaveSideBar/WaveSideBar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WaveSideBarView.iml" filepath="$PROJECT_DIR$/WaveSideBarView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WaveSideBar.iml" filepath="$PROJECT_DIR$/WaveSideBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WaveSideBar/WaveSideBar-WaveSideBar.iml" filepath="$PROJECT_DIR$/WaveSideBar/WaveSideBar-WaveSideBar.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

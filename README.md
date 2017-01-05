@@ -23,6 +23,22 @@ WavaSideBar——一个自带中英文对应排序的字母导航栏
   <type>pom</type>
 </dependency>
 ```
+####2017年1月5日后仓库转移到jitpack，添加依赖方式为：
+#####Step 1. Add it in your root build.gradle at the end of repositories:
+```java
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+#####Step 2. Add the dependency
+```java
+dependencies {
+	        compile 'com.github.nanchen2251:WaveSideBar:1.0.3'
+	}
+```
 ####2、在xml文件里面使用<br>
 ```java
   <com.nanchen.wavesidebar.WaveSideBarView

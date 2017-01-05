@@ -7,3 +7,9 @@
 /build
 /captures
 .externalNativeBuild
+
+
+.gradle/
+.idea/
+build/
+WaveSideBar/

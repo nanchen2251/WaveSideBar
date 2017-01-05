@@ -37,7 +37,7 @@ version = "1.0.1"    //这个是版本号，必须填写
 def siteUrl = 'https://github.com/nanchen2251/WaveSideBar' // 项目的主页
 def gitUrl = 'https://github.com/nanchen2251/WaveSideBar' // Git仓库的url
 
-group = "com.nanchen.wavesidebarview" // 这里是groupId ,必须填写  一般填你唯一的包名
+//group = "com.nanchen.wavesidebarview" // 这里是groupId ,必须填写  一般填你唯一的包名
 
 install {
     repositories.mavenInstaller {
@@ -108,7 +108,7 @@ javadoc {
 }
 
 artifacts {
-    archives javadocJar
+//    archives javadocJar
     archives sourcesJar
 }
 

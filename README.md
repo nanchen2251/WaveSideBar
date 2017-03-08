@@ -25,7 +25,7 @@ allprojects {
 #####Step 2. Add the dependency
 ```java
 dependencies {
-	        compile 'com.github.nanchen2251:WaveSideBar:1.0.4'
+	        compile 'com.github.nanchen2251:WaveSideBar:1.0.5'
 	}
 ```
 ####2、在xml文件里面使用<br>

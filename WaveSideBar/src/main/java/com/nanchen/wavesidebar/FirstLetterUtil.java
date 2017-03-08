@@ -1,13 +1,22 @@
 package com.nanchen.wavesidebar;
 
 /**
+ * 获取首字母的工具类
+ *
  * @author nanchen
  * @fileName WaveSideBarView
  * @packageName com.nanchen.wavesidebar
  * @date 2016/12/27  15:28
+ * @github https://github.com/nanchen2251
  */
 
 public class FirstLetterUtil {
+    private FirstLetterUtil() {
+        throw new UnsupportedOperationException("u can't instantiate me...");
+    }
+
+
+
     private static int BEGIN = 45217;
     private static int END = 63486;
     // 按照声母表示，这个表是在GB2312中的出现的第一个汉字，也就是说“啊”是代表首字母a的第一个汉字。

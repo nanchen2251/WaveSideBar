@@ -9,10 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
+ * 带头的View
+ *
  * @author nanchen
  * @fileName WaveSideBarView
  * @packageName com.nanchen.wavesidebarview
  * @date 2016/12/27  16:12
+ * @github https://github.com/nanchen2251
  */
 
 public class PinnedHeaderDecoration extends RecyclerView.ItemDecoration {

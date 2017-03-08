@@ -15,6 +15,8 @@ import android.view.View;
 import java.util.Arrays;
 
 /**
+ * 侧边的字母导航栏
+ *
  * @author nanchen
  * @fileName WaveSideBarView
  * @packageName com.nanchen.wavesidebar

@@ -3,10 +3,13 @@ package com.nanchen.wavesidebarview;
 import java.util.Comparator;
 
 /**
+ * 专用于按首字母排序
+ *
  * @author nanchen
  * @fileName WaveSideBarView
  * @packageName com.nanchen.wavesidebarview
  * @date 2016/12/27  16:19
+ * @github https://github.com/nanchen2251
  */
 
 public class LetterComparator implements Comparator<ContactModel>{

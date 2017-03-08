@@ -7,10 +7,14 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ *
+ * 联系人model实体类
+ *
  * @author nanchen
  * @fileName WaveSideBarView
  * @packageName com.nanchen.wavesidebarview
  * @date 2016/12/27  15:35
+ * @github https://github.com/nanchen2251
  */
 
 public class ContactModel {
@@ -30,6 +34,10 @@ public class ContactModel {
         return name;
     }
 
+
+    /**
+     * 这里只是为了做演示，实际上数据应该从服务器获取
+     */
     public static List<ContactModel> getContacts() {
         List<ContactModel> contacts = new ArrayList<>();
 

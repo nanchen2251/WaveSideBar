@@ -1,23 +1,40 @@
 package com.nanchen.wavesidebarview;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import android.text.Editable;
+import android.text.TextWatcher;
 
+import com.nanchen.wavesidebar.SearchEditText;
+import com.nanchen.wavesidebar.Trans2PinYinUtil;
 import com.nanchen.wavesidebar.WaveSideBarView;
 import com.nanchen.wavesidebar.WaveSideBarView.OnSelectIndexItemListener;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * 主页面
+ *
+ * @author nanchen
+ * @fileName WaveSideBarView
+ * @packageName com.nanchen.wavesidebarview
+ * @date 2016/12/27  18:12
+ * @github https://github.com/nanchen2251
+ *
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     private List<ContactModel> mContactModels;
+    private List<ContactModel> mShowModels;
     private RecyclerView mRecyclerView;
     private WaveSideBarView mWaveSideBarView;
-    private Toolbar mToolbar;
+    private SearchEditText mSearchEditText;
+    private ContactsAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +46,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void bindView() {
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        initToolBar(mToolbar, false, "");
 
+        mAdapter = new ContactsAdapter(mShowModels);
+
+        // RecyclerView设置相关
         mRecyclerView = (RecyclerView) findViewById(R.id.main_recycler);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-
         final PinnedHeaderDecoration decoration = new PinnedHeaderDecoration();
         decoration.registerTypePinnedHeader(1, new PinnedHeaderDecoration.PinnedHeaderCreator() {
             @Override
@@ -43,11 +60,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         mRecyclerView.addItemDecoration(decoration);
-
-        mRecyclerView.setAdapter(new ContactsAdapter(mContactModels));
-
+        mRecyclerView.setAdapter(mAdapter);
 
 
+        // 侧边设置相关
         mWaveSideBarView = (WaveSideBarView) findViewById(R.id.main_side_bar);
         mWaveSideBarView.setOnSelectIndexItemListener(new OnSelectIndexItemListener() {
             @Override
@@ -60,21 +76,41 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-    }
 
-    /**
-     *  初始化 Toolbar
-     */
-    public void initToolBar(Toolbar toolbar, boolean homeAsUpEnabled, String title) {
-        toolbar.setTitle(title);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(homeAsUpEnabled);
+
+        // 搜索按钮相关
+        mSearchEditText = (SearchEditText) findViewById(R.id.main_search);
+        mSearchEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                mShowModels.clear();
+                for (ContactModel model : mContactModels) {
+                    String str = Trans2PinYinUtil.trans2PinYin(model.getName());
+                    if (str.contains(s.toString())) {
+                        mShowModels.add(model);
+                    }
+                }
+                mAdapter.notifyDataSetChanged();
+            }
+        });
     }
 
 
     private void initData() {
         mContactModels = new ArrayList<>();
+        mShowModels = new ArrayList<>();
         mContactModels.addAll(ContactModel.getContacts());
+        mShowModels.addAll(mContactModels);
     }
 
     @Override

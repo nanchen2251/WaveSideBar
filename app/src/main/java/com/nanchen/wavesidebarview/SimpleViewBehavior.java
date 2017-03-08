@@ -13,10 +13,12 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.Transformation;
 
 /**
+ *
  * @author nanchen
  * @fileName WaveSideBarView
  * @packageName com.nanchen.wavesidebarview
  * @date 2016/12/27  16:42
+ * @github https://github.com/nanchen2251
  */
 
 public class SimpleViewBehavior extends CoordinatorLayout.Behavior<View> {

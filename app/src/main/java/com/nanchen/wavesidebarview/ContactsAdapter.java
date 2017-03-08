@@ -11,10 +11,13 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
+ * Contact联系人适配器
+ *
  * @author nanchen
  * @fileName WaveSideBarView
  * @packageName com.nanchen.wavesidebarview
  * @date 2016/12/27  15:33
+ * @github https://github.com/nanchen2251
  */
 
 public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ContactsViewHolder> {

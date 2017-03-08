@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--侧边字母导航栏-->
     <declare-styleable name="WaveSideBarView">
         <attr name="sidebar_lazy_respond" format="boolean"/>
         <attr name="sidebar_text_color" format="color"/>
@@ -13,5 +15,10 @@
             <enum name="left" value="1"/>
             <enum name="right" value="2" />
         </attr>
+    </declare-styleable>
+
+    <!--自定义搜索框-->
+    <declare-styleable name="SearchEditText">
+        <attr name="drawableDel" format="reference" />
     </declare-styleable>
 </resources>

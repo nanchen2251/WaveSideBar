@@ -122,5 +122,5 @@ Trans2PinYinUtil.trans2PinYin(String name);
 ##关于作者
     南尘<br>
     四川成都<br>
-    [支持开源](https://github.com/nanchen2251/)
+    [其它开源](https://github.com/nanchen2251/)<br>
     [博客园](http://www.cnblogs.com/liushilin/)

@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 mShowModels.clear();
                 for (ContactModel model : mContactModels) {
                     String str = Trans2PinYinUtil.trans2PinYin(model.getName());
-                    if (str.contains(s.toString())) {
+                    if (str.contains(s.toString()) || model.getName().contains(s.toString())) {
                         mShowModels.add(model);
                     }
                 }

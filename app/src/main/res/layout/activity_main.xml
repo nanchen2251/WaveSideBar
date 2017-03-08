@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     tools:context="com.nanchen.wavesidebarview.MainActivity">
 
-
+    <!--搜索框-->
     <com.nanchen.wavesidebar.SearchEditText
         android:id="@+id/main_search"
         android:layout_width="match_parent"
@@ -38,6 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
+        <!--字母导航栏-->
         <com.nanchen.wavesidebar.WaveSideBarView
             android:id="@+id/main_side_bar"
             android:layout_width="match_parent"

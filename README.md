@@ -1,7 +1,7 @@
 # WaveSideBar
 WavaSideBar——一个自带中英文对应排序的字母导航栏
 ##效果图<br>
-![](https://github.com/nanchen2251/WaveSideBar/blob/master/GIF1.gif)
+![](https://github.com/nanchen2251/WaveSideBar/blob/master/GIF.gif)
 
 ####⊙开源不易，希望给个star或者fork奖励
 ##特点
@@ -119,6 +119,11 @@ Trans2PinYinUtil.trans2PinYin(String name);
 | sidebar_position  | enum {right, left}|      right    | Be placed on left or right in the view.  |
 | sidebar_text_alignment  | enum {center, left, right}|      center    | Alignment of items.   |
 | sidebar_lazy_respond  | boolean|      false    |If true, the listener will not be called until the finger up. If false, the listener will be called when the finger down, move and up.  |
+
+该项目参考了：
+
+* [https://github.com/gjiazhe/WaveSideBar](https://github.com/gjiazhe/WaveSideBar) 
+* [https://github.com/Solartisan/WaveSideBar](https://github.com/Solartisan/WaveSideBar)
 ##关于作者
     南尘<br>
     四川成都<br>

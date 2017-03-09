@@ -8,6 +8,7 @@ package com.nanchen.wavesidebar;
  * @packageName com.nanchen.wavesidebar
  * @date 2016/12/27  15:28
  * @github https://github.com/nanchen2251
+ * 
  */
 
 public class FirstLetterUtil {

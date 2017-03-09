@@ -1,5 +1,5 @@
 # WaveSideBar
-WavaSideBar——一个自带中英文对应排序的字母导航栏
+WavaSideBar——一个自带中英文对应排序和检索功能的字母导航栏
 ##效果图<br>
 ![](https://github.com/nanchen2251/WaveSideBar/blob/master/GIF.gif)
 

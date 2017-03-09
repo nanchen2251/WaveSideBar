@@ -4,6 +4,7 @@ WavaSideBar——一个自带中英文对应排序和检索功能的字母导航
 ![](https://github.com/nanchen2251/WaveSideBar/blob/master/GIF.gif)
 
 ####⊙开源不易，希望给个star或者fork奖励
+####⊙拥抱开源：https://github.com/nanchen2251/
 ##特点
   1、支持手势滑动导航栏<br>
   2、支持自定义设置偏移量和颜色<br>

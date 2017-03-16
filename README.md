@@ -3,18 +3,18 @@ WavaSideBar——一个自带中英文对应排序和检索功能的字母导航
 ##效果图<br>
 ![](https://github.com/nanchen2251/WaveSideBar/blob/master/GIF.gif)
 
-####⊙开源不易，希望给个star或者fork奖励
-####⊙拥抱开源：https://github.com/nanchen2251/
-##特点
+#### ⊙开源不易，希望给个star或者fork奖励
+#### ⊙拥抱开源：https://github.com/nanchen2251/
+## 特点
   1、支持手势滑动导航栏<br>
   2、支持自定义设置偏移量和颜色<br>
   3、支持设置字母导航栏设置位置<br>
   4、支持自动匹配中英文<br>
   5、支持拼音和中文搜索<br>
-##使用方法
-####1、添加依赖<br>
-####2017年1月5日后仓库转移到jitpack，添加依赖方式为：
-#####Step 1. Add it in your root build.gradle at the end of repositories:
+## 使用方法
+#### 1、添加依赖<br>
+#### 2017年1月5日后仓库转移到jitpack，添加依赖方式为：
+##### Step 1. Add it in your root build.gradle at the end of repositories:
 ```java
 allprojects {
 		repositories {
@@ -23,13 +23,13 @@ allprojects {
 		}
 	}
 ```
-#####Step 2. Add the dependency
+##### Step 2. Add the dependency
 ```java
 dependencies {
 	        compile 'com.github.nanchen2251:WaveSideBar:1.0.6'
 	}
 ```
-####2、在xml文件里面使用<br>
+#### 2、在xml文件里面使用<br>
 ```java
   <!--搜索框-->
   <com.nanchen.wavesidebar.SearchEditText
@@ -61,7 +61,7 @@ dependencies {
         app:sidebar_text_color="@color/colorAccent"
         app:sidebar_lazy_respond="false"/>
 ```
-####3、在Activity里面使用<br>
+#### 3、在Activity里面使用<br>
 ```java
     mWaveSideBarView = (WaveSideBarView) findViewById(R.id.main_side_bar);
     mWaveSideBarView.setOnSelectIndexItemListener(new OnSelectIndexItemListener() {
@@ -103,11 +103,11 @@ dependencies {
             }
         });
 ```
-####4、自动匹配中英文<br>
+#### 4、自动匹配中英文<br>
 ```java
 FirstLetterUtil.getFirstLetter(name);
 ```
-####5、中文转换成拼音<br>
+#### 5、中文转换成拼音<br>
 ```java
 Trans2PinYinUtil.trans2PinYin(String name);
 ```
@@ -127,7 +127,7 @@ Trans2PinYinUtil.trans2PinYin(String name);
 * [https://github.com/Solartisan/WaveSideBar](https://github.com/Solartisan/WaveSideBar)
 
 
-##关于作者
+## 关于作者
     南尘<br>
     四川成都<br>
     [其它开源](https://github.com/nanchen2251/)<br>

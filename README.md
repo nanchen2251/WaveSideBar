@@ -112,7 +112,7 @@ FirstLetterUtil.getFirstLetter(name);
 Trans2PinYinUtil.trans2PinYin(String name);
 ```
 具体请下载查看示例代码
-##属性一览
+## 属性一览
 |      Attributes     |   Format |    Default   |           Description          |
 | ------------------- |  ------: | :---------:  | :-----------                   |
 | sidebar_text_color  |   color  |  Color.GRAY  | Text color.                    |
